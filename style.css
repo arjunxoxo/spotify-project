@@ -1,0 +1,246 @@
+:root {
+  --black: #000;
+  --grey: #121212;
+  --light-grey: #232323;
+  --white: #aaa;
+}
+
+body,
+html {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  height: 100%;
+  margin: 0rem;
+  overflow: hidden;
+  flex-direction: column;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  background-color: var(--black);
+  flex: 1;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.sidebar {
+  flex: 0.25;
+  background-color: var(--black);
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.main {
+  flex: 0.8;
+  background-color: var(--grey);
+  overflow-y: auto;
+}
+.top-icons {
+  background-color: var(--grey);
+  padding: 1rem 1.8rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  margin-bottom: 0.5rem;
+}
+.link-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.link-flex:hover {
+  opacity: 2;
+}
+.link-flex img {
+  margin-right: 1.3rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.link-flex0 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  opacity: 1;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-left: 0rem;
+}
+.link-flex0 img {
+  margin-right: 0rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.library {
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+  padding: 1rem 1.8rem;
+  height: 100%;
+  flex: auto;
+}
+.library:hover {
+  overflow-y: auto;
+}
+.flex-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0rem;
+}
+.flex-top img {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-right: 0.8rem;
+}
+
+.chip {
+  margin-top: 0.1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-grey);
+  border-radius: 5rem;
+  width: fit-content;
+  font-weight: normal;
+  color: var(--white);
+  opacity: 0.9;
+}
+.chip:hover {
+  opacity: 1;
+}
+
+.albums {
+  margin-top: 0.2rem;
+}
+.col-flex p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.album-flex {
+  margin-bottom: 0rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.album-flex:hover {
+  background-color: var(--light-grey);
+}
+.album-flex img {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+}
+.album-flex .col-flex .album-name {
+  font-size: 1.2rem;
+}
+
+.main-content {
+  flex: 0.8;
+  overflow-y: auto;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  padding-bottom: 6rem;
+}
+
+.header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  align-items: center;
+  background-color: var(--grey);
+}
+
+.cards-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  background-color: var(--light-grey);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  height: fit-content;
+  margin: 0rem 0.75rem;
+  opacity: 0.8;
+}
+.play-btn{
+  opacity: 0;
+  position: absolute; 
+  width: 60px; 
+  bottom: 60px;
+  right: 10px; 
+  transition: opacity 0.2s ease;
+}
+.card:hover .play-btn{
+  opacity: 1;
+}
+.play-btn:hover{
+  transform: scale(1.2);
+}
+.card-img {
+  width: 100%;
+  border-radius: 0.35rem;
+}
+
+.card-name {
+  margin: 0.25rem 0rem;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+.card:hover {
+  opacity: 1;
+}
+
+.input {
+  background-color: var(--light-grey);
+  border: 2px solid white;
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  color: var(--white);
+}
+.promo-cards{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.promos{
+    width: 150px;
+    padding: 0.5rem ;
+    border-radius: 0.5rem;
+    height: 150px;
+    margin-right: 0.1rem;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.imag{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 5.2rem;
+}
+#img{
+    object-fit: fill;
+    transform: rotate(25deg);
+}
+.promos:hover{
+  opacity: 1;
+}
